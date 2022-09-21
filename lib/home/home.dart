@@ -24,7 +24,8 @@ class HomePage extends ConsumerWidget {
       appBar: AppBar(
         elevation: 0,
         centerTitle: true,
-        title: const Text('Moviiies'),
+        title: const Text('Popular Movies'),
+        backgroundColor: Colors.deepPurple,
       ),
       body: ref.watch(moviesFutureProvider).when(
             error: (e, s) {
